@@ -1,0 +1,44 @@
+body{
+    background: gray;
+}
+
+#title, .subtitle, .post_title{
+    color:blue;
+}
+
+.post_title{
+    font-size: 16px;
+    font-style: italic;
+}
+
+.post{
+    background: white;
+    padding:15px 10px 5px 0;
+    border: 3px solid black;
+    margin: 10px;
+    border-top: 5px dotted red;
+    border-radius: 30px;
+}
+
+img{
+    max-width: 30%;
+    display: inline-block;
+    margin: 10px;
+}
+
+p{
+    display: inline-block;
+    font-family: Verdana, Arial;
+    margin: 10px;
+}
+
+ul{
+    list-style-type: square;
+    margin: 0%;
+    padding: 20px;
+}
+
+.foximg{
+    height: 150px;
+    border-radius: 50%;
+}
