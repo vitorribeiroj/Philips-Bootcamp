@@ -1,0 +1,44 @@
+.logo{
+    width: 7.5%;    
+}
+
+.fsize{
+    font-size: 24px;
+}
+
+#quem-somos{
+    background-color: rgb(40, 40, 58);
+}
+
+.padding{
+    padding: 50px;
+}
+
+.paddingtext{
+    padding-bottom: 20px;
+}
+
+#parceiros{
+    background-color: rgb(108, 108, 131);
+}
+
+section{
+    color:white;
+}
+
+.servicos{
+    color:black;    
+}
+
+p{
+    text-align: justify;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: darkslategray;
+    color: white;
+    font-weight: bold;
+    
+}
