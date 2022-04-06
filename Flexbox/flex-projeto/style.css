@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+    
+}
+
+
+header {
+    background-color: rgb(20, 20, 80);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+header .list-items {
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-items li a {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+div img {
+    display: block;
+    width: 100%;
+}
+
+header .menu {
+    justify-content: space-between;
+}
+
+.apresentacao {
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao .texto-apresentacao {
+    min-height: 200px;
+}
+
+.texto-apresentacao h1 {
+    color: rgb(20, 20, 80);
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.texto-apresentacao a {
+    background-color: rgb(20, 20, 80);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    display: block;
+    width: 220px;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#quem-somos {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quem-somos img{
+    min-width: 320px;
+    margin: auto;
+}
+
+#quem-somos h2 {
+    font-size: 32px;
+    color: rgb(20, 20, 80);
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#quem-somos h2::before {
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: rgb(20, 20, 80);
+    position: relative;
+}
+
+#quem-somos p {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#quem-somos img {
+    min-width: 420px;
+}
+
+.container-externo {
+    background-color: rgb(20, 20, 80);
+    width: 100%;
+}
+
+#servicos {
+    flex-direction: column;
+    padding: 60px 0;
+
+
+}
+
+#servicos h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.list-servicos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-servicos .item-servico {
+    text-align: center;
+    align-content: center;
+
+}
+
+.item-servico a {
+    width: 220px;
+    background-color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(20, 20, 80);
+    
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    padding: 10px 40px;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.item-servico p {
+    color: white;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+#planos {
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 60px 0;
+}
+
+#planos h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+#planos h3 {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 240px;
+}
+
+#planos h3::after {
+    content: "";
+    height: 3px;
+    width: 80%;
+    margin: 20px 0 10px 0;
+    background-color: rgb(20, 20, 80);
+    position: relative;
+
+
+}
+
+#planos ul {
+    padding: 10px 25px;
+
+
+}
+
+#planos ul li {
+    list-style-type: square;
+    margin: 10px;
+}
+
+
+.list-planos {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: rgb(20, 20, 80);
+    
+
+}
+
+.item-plano {
+
+    border: 4px solid rgb(20, 20, 80);
+    padding: 30px 10px 20px 10px;
+    flex: 1;
+    max-width: 240px;
+    margin-bottom: 20px;
+
+}
+
+.item-plano a {
+    background-color: rgb(20, 20, 80);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    display: block;
+    width: 160px;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(20, 20, 80);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+footer .footer {
+    justify-content: space-between;
+}
+
+/*mobile*/
+@media(max-width: 992px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao .texto-apresentacao {
+        width: 100%;
+    }
+
+    #quem-somos {
+        flex-direction: column-reverse;
+    }
+
+    .list-servicos {
+        flex-direction: column;
+    }
+
+    .item-servico img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .list-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .list-planos .item-plano{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
