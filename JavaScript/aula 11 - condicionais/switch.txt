@@ -1,0 +1,4 @@
+Características do condicional "Switch":
+
+- Equivale a uma comparação de tipo e valor (===)
+- Sempre requer valor "default"
