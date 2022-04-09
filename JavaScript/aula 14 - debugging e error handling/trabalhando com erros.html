@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function verificaPalindromo(string) {
+            if (!string) throw "String inválida";
+
+            return string === string.split('').reverse().join('');
+        }
+
+        function tryCatchExemplo(string) {
+            try {
+                verificaPalindromo(string)
+            }
+            catch (e) {
+                console.log(e)
+            }
+        }
+
+        tryCatchExemplo('');
+
+
+        try {
+            let divisaoPorZero = Number(zero)
+
+        }
+        catch (erro) {
+            throw 'Erro ao converter!'
+        }
+        finally {
+            console.log('Testando finally...')
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

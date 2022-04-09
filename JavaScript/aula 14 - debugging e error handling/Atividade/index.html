@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+
+        function validaArray(array, tamanho) {
+
+            try {
+                if (!array || !tamanho) { throw new ReferenceError('Algum parâmetro não foi informado') }
+                if (typeof (array) !== 'object') { throw new TypeError('Array precisa ser do tipo object') }
+                if (typeof (tamanho) !== 'number') { throw new TypeError('Tamanho informado inválido') }
+                if (array.length != tamanho) { throw new RangeError('O tamanho da array é diferente!') }
+                if (array.length == tamanho) { return console.log(array) }
+            }
+            catch (e) {
+                if (e instanceof TypeError) { console.log(e.message) }
+                else if (e instanceof ReferenceError) { console.log(e.message) }
+                else if (e instanceof RangeError) { console.log(e.message) }
+                else { console.log('Erro desconhecido') }
+            }
+
+        }
+
+        let array = ['vitor', 32, 'mariana', 29]
+
+        console.log('\n--------------- TESTE 1 - PARÂMETROS CORRETOS -------------\n')
+        validaArray(array, 4)
+        console.log('\n--------------- TESTE 2 - TAMANHO DIFERENTE ---------------\n')
+        validaArray(array, 3)
+        console.log('\n------------ TESTE 3 - ARRAY NÃO É TIPO OBJETO ------------\n')
+        validaArray('s', 2)
+        console.log('\n----------- TESTE 4 - TAMANHO NÃO É TIPO NÚMERO -----------\n')
+        validaArray(array, 's')
+        console.log('\n----------- TESTE 5 - SEM PARÂMETROS INFORMADOS -----------\n')
+        validaArray()
+
+    </script>
+
+</body>
+
+</html>
