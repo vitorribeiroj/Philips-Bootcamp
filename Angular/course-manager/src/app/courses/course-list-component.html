@@ -1,5 +1,6 @@
 <h2>Course List</h2>
 
+
 <div class="form-group row">
 
     <label class="col-sm-2 col-form-label">Filter By:</label>
@@ -32,9 +33,11 @@
             <td><app-star [rating]="course.rating"></app-star>
             </td>
             <td>
-                <a [routerLink]="['/courses/info', course.id]" class="btn btn-primary">Edit</a>
+                <a [routerLink]="['/courses/info', course.id]" class="btn btn-primary mx-2">Edit</a>
+                <button [routerLink]="['/courses']" (click)="deleteById(course.id)" class="btn btn-danger">Delete</button>
             </td>
         </tr>
     </tbody>
 
 </table>
+
