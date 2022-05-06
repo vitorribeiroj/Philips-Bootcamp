@@ -1,0 +1,20 @@
+<div class="container">
+
+    <h1>{{text}}</h1>
+
+    <h1>Meu nome é {{ retornaNome() }}</h1>
+    
+    <img src= '{{ imgUrl }}' alt="" class="src m-5">
+    
+    <img [src]="imgUrl" alt="" class="src mb-5">
+
+</div>
+
+<div class="container">
+    <button (click)="clicou()">Clique aqui</button>
+
+</div>
+
+<div class="container">
+    <input #input (keyup)="escreveu(input.value)" type="text">
+</div>

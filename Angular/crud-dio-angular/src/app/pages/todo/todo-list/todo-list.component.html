@@ -1,0 +1,17 @@
+<div class="card my-5">
+    <div class="card-body">
+        <h2 class="card-title">Lista de Tarefas</h2>
+        <div class="input-group my-3">
+            
+            <input #todo type="text" class="form-control" placeholder="Digite a sua tarefa" aria-label="Tarefa:"
+                (keyup.enter)="addTodo(todo.value); todo.value=''">
+        </div>
+
+    <div *ngFor="let todo of todos;">
+        <app-todo-item [todo]="todo" (remove)="removeToDo($event)"></app-todo-item>
+    </div>
+
+
+       
+    </div>
+</div>

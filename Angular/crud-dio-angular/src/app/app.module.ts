@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,6 +8,13 @@ import { UsersListComponent } from './pages/users/users-list/users-list.componen
 import { UserFormComponent } from './pages/users/user-form/user-form.component';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DataBindingComponent } from './pages/data-binding/data-binding.component';
+import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
+import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
+import { PipesExamplesComponent } from './pages/pipes-examples/pipes-examples.component';
+import { UpperCasePipe } from '@angular/common';
+import { PrintListPipe } from './print-list.pipe';
+
 
 
 @NgModule({
@@ -15,7 +22,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     UsersListComponent,
-    UserFormComponent
+    UserFormComponent,
+    DataBindingComponent,
+    TodoListComponent,
+    TodoItemComponent,
+    PipesExamplesComponent,
+    PrintListPipe
   ],
   imports: [
     BrowserModule,
@@ -24,7 +36,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [UpperCasePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
